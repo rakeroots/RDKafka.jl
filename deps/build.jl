@@ -13,7 +13,7 @@ cd(@__DIR__) do
         run(`./configure`)
         run(`make`)        
     end
-    cp("librdkafka/src/librdkafka.so.1", "librdkafka.so"; remove_destination=true)
+    cp("librdkafka/src/librdkafka.so.1", "librdkafka.so"; force=true)
 end
 
 
